@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] d = new string[7] { "Восресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" };
+            int N, a;
+            Console.Write("Введите K: ");
+            N = int.Parse(Console.ReadLine());
+            a = N % 7;
+            Console.Write(a);
+            Console.Write(" - ");
+            Console.Write(d[a]);
+            Console.ReadKey();
+        }
+    }
+}
